@@ -1,4 +1,4 @@
-!#/bin/bash
+#!/bin/bash
 
 sudo useradd  -N --shell /bin/cat tunnel
 echo "tunnel:tunnel" |sudo chpasswd
