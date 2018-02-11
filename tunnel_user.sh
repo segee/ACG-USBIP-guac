@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo useradd  -N --shell /bin/cat tunnel
+sudo useradd --create-home  --home-dir /home/tunnel  --shell /bin/cat tunnel
 echo "tunnel:tunnel" |sudo chpasswd
 
 sudo mkdir /home/tunnel/.ssh
