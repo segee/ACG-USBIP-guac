@@ -1,7 +1,6 @@
 #!/bin/bash
-
+sudo userdel -r tunnel >/dev/null
 sudo useradd --create-home  --home-dir /home/tunnel  --shell /bin/cat tunnel
-echo "tunnel:tunnel" |sudo chpasswd
 
 sudo mkdir /home/tunnel/.ssh
 # copy an appropriate authorized_keys file
