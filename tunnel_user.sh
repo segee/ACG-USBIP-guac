@@ -11,4 +11,4 @@ sudo cp /usr/local/bin/ACG-USBIP-guac/authorized_keys ~tunnel/.ssh/.
 sudo chown tunnel ~tunnel/.ssh/authorized_keys
 sudo chmod 700 ~tunnel/.ssh
 sudo chmod 700 ~tunnel/.ssh/authorized_keys
-echo "GatewayPorts yes" |sudo tee -a /etc/ssh/sshd_config
+printf "\nGatewayPorts yes\n" |sudo tee -a /etc/ssh/sshd_config
